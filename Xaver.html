@@ -1,0 +1,91 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <title>Xaverの个人主页</title>  
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;  
+            background-color: #f0f0f0;
+            margin: 0;  
+            padding: 0;  
+            display: flex;  
+            flex-direction: column;  
+            align-items: center;  
+            justify-content: center;  
+            height: 100vh;  
+            text-align: center;  
+        }  
+        h1 {  
+            color: #333;  
+        }  
+	h2{
+	    color: Grey;
+	}
+        p {  
+            color: #666;  
+        }  
+        a {  
+            color: #B4CDCD;
+	    text-decoration: none !important;
+        }  
+        a:hover {  
+            color:#7A8B8B;
+	}
+	/* 头部样式 */  
+  	header {  
+    		color: #fff;  
+    		padding: 10px;  
+    		text-align: center;  
+  	}    
+    </style>  
+</head>  
+<body>  
+	
+	<div>
+	<header>
+		<br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+    		<h1 style="color:#838B83">Xaverの个人主页</h1>    
+    		<a href="#about">关于我</a>
+    		<a href="#projects">我的项目</a>
+    		<a href="#contact">联系我</a>
+		<br></br>
+	<header>
+	</div>
+	
+  
+    <div id="about" onclick="animateElement('about')">  
+        <h2>关于我</h2>  
+	<h3 style="color:#C1CDC1">你好，我是Xaver，也可叫我“大向”。</h3>
+        <p>我是一名专注于网页前端开发的技术爱好者。</p> 
+	<p>我热爱前端开发，精通HTML、CSS与JavaScript，</p> 
+	<p>致力于为用户打造优雅且功能强大的在线体验感受。</p> 
+	<p>在前端的世界里，我力求让每个网页都充满创新！</p> 
+	<br></br>
+    </div>  
+  
+    <div id="projects" onclick="animateElement('projects')">  
+        <h2>我的项目</h2>  
+        <h3 style="color:#C1CDC1">这里列出了我参与的一些项目。</h3>  
+	<p>1.开发<a href="https://utgroup.top" target="_blank">Sutgroup团队</a>2号官网；</p>
+	<p>2.开发Sutgroup成员个人主页；</p>
+	<br></br>
+    </div>  
+  
+    <div id="contact" onclick="animateElement('contact')">  
+        <h2>联系我</h2>  
+        <h3 style="color:#C1CDC1">你可以通过以下方式联系我喔！</h3>  
+        <p>腾讯QQ: 2277279390</p>  
+	<p>邮箱: 2277279390@qq.com</p>  
+	<br></br>
+	<h3 style="color:#838B83">&copy; Copyright 2024 Sutgroup团队's Xaver</h3>
+    </div>  
+    <script> 
+        var links = document.querySelectorAll('a');  
+        links.forEach(function(link) {  
+            link.style.textDecoration = 'underline';  
+            link.style.cursor = 'pointer';  
+        });  
+    </script>
+</body>  
+</html>

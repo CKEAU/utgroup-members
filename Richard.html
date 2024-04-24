@@ -1,0 +1,94 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <title>Richardの个人主页</title>  
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;  
+            background-color: #f0f0f0;
+            margin: 0;  
+            padding: 0;  
+            display: flex;  
+            flex-direction: column;  
+            align-items: center;  
+            justify-content: center;  
+            height: 100vh;  
+            text-align: center;  
+        }  
+        h1 {  
+            color: #333;  
+        }  
+	h2{
+	    color: Grey;
+	}
+        p {  
+            color: #666;  
+        }  
+        a {  
+            color: #B4CDCD;
+	    text-decoration: none !important;
+        }  
+        a:hover {  
+            color:#7A8B8B;
+	}
+	/* 头部样式 */  
+  	header {  
+    		color: #fff;  
+    		padding: 10px;  
+    		text-align: center;  
+  	}    
+    </style>  
+</head>  
+<body>  
+	
+	<div>
+	<header>
+		<br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+    		<h1 style="color:#838B83">Richardの个人主页</h1>    
+    		<a href="#about">关于我</a>
+    		<a href="#projects">我的项目</a>
+    		<a href="#contact">联系我</a>
+		<br></br>
+	<header>
+	</div>
+	
+  
+    <div id="about" onclick="animateElement('about')">  
+        <h2>关于我</h2>  
+	<h3 style="color:#C1CDC1">你好，我是Richard，</h3>
+        <p>我是一名专注于网页前端开发的技术爱好者。</p> 
+	<p>我来自Sutgroup（第七计算机科技联合社）。</p> 
+	<p>我擅长于Python，会少量的kotlin和C语言。</p> 
+	<p>欢迎考虑加入我们Sutgroup团队哦！</p> 
+	<br></br>
+    </div>  
+  
+    <div id="projects" onclick="animateElement('projects')">  
+        <h2>我的项目</h2>  
+        <h3 style="color:#C1CDC1">我主要开发的项目有这些。</h3>  
+	<p>1.ALLTALE自动修复和储蓄系统；</p>
+	<p>2.Novaera通讯器；</p>
+	<p>3.网站源码爬取器；</p>
+	<br></br>
+    </div>  
+  
+    <div id="contact" onclick="animateElement('contact')">  
+        <h2>联系我</h2>  
+        <h3 style="color:#C1CDC1">你可以通过以下方式联系我喔！</h3>  
+        <p>腾讯QQ: 3498336023</p>  
+	<p>邮箱: 3498336023@qq.com</p>  
+	<p>微信: goodforourhealth</p>  
+	<p>Github: https://www.github.com/CKEAU</p> 
+	<br></br>
+	<h3 style="color:#838B83">&copy; Copyright 2024 Sutgroup团队's Xaver</h3>
+    </div>  
+    <script> 
+        var links = document.querySelectorAll('a');  
+        links.forEach(function(link) {  
+            link.style.textDecoration = 'underline';  
+            link.style.cursor = 'pointer';  
+        });  
+    </script>
+</body>  
+</html>
